@@ -2,6 +2,15 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
+    color: rgb(217, 215, 215);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .band--photo-fixed {
@@ -11,6 +20,10 @@
     z-index: 0;
     opacity: .8;
     background-color: black;
+}
+
+hr {
+    margin: 1rem 10rem;
 }
 
 header {
@@ -43,12 +56,89 @@ button {
 
 main {
     z-index: 1;
-    height: 100rem;
+    height: 150rem;
     background-color: black;
     position: relative;
     width: 100%;
 }
 
-button:hover {
+.menu {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    background-color: black;
+    top: 0;
+    padding: 0.5rem 1rem 0;
+}
+
+.menu--item {
+    color: white;
+    margin: 0 4rem ;
+    font-size: 1.5rem;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+.section--title {
+    text-align: center;
+    padding: 1rem;
+}
+
+.artwork {
+    height: 30rem;
+}
+
+.release--links {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 20rem;
+}
+
+.release--links nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30rem;
+}
+
+.streaming--service-logo {
+    width: 15rem;
+    height: auto;
+    color: white;
+}
+
+#merch--section {
+    padding: 1rem 10rem;
+}
+
+.merch--menu {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.merch--image-description {
+ display: flex;
+ flex-direction: column;
+ width: 20rem;
+ height: 26rem;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.merch--image {
+    height: 23rem;
+}
+
+.merch--description {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+button:hover,
+a:hover {
     cursor: pointer;
+    opacity: .6;
 }
