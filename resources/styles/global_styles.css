@@ -16,17 +16,22 @@ h2 {
 
 #merch--section,
 #shows--section,
-#music--secvtion {
+#music--section {
     padding: 1rem 10rem;
 }
 
-.menu--window {
+#menu--window {
     display: none;
     position: fixed;
     background-color: black;
-    z-index: 10;
+    z-index: 5;
+    opacity: .95;
     width: 100%;
     height: 100%;
+}
+
+#window--menu-button {
+    height: 5rem;
 
 }
 
@@ -37,6 +42,21 @@ h2 {
     z-index: 0;
     opacity: .8;
     background-color: black;
+}
+
+.window--nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    margin: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window--nav a {
+    font-size: 3rem;
+    text-decoration: none;
 }
 
 hr {
@@ -58,7 +78,7 @@ button {
     border: none;
 }
 
-.header--menu-button {
+#header--menu-button {
     height: 5rem;
     width: auto;
     text-align: left;

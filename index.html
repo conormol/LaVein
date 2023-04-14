@@ -9,12 +9,18 @@
     <title>LaVein</title>
 </head>
 <body>
-    <nav class="menu--window">
-        Hello
-    </nav>
+    <div id="menu--window">
+        <button href="#"><img id=window--menu-button alt="menu" title="menu" src="./resources/images/lv_flat_white.png"></button>
+        <nav class="window--nav">
+            <a class="window--menu-item">Listen on Spotify</a>
+            <a class="window--menu-item">Listen on Bandcamp</a>
+            <a href="./resources/images/facebook.png" class="window--menu-item">Facebook</a>
+            <a href="./resources/images/instagram.png" class="window--menu-item">Instagram</a>
+        </nav>
+    </div>
     <img class="band--photo-fixed" alt="laVein" title="LaVein" src="./resources/images/band_photo.png">
     <header>
-        <button><img class="header--menu-button" alt="menu" title="menu" src="./resources/images/lv_flat_white.png"></button><br>
+        <button><img id="header--menu-button" alt="menu" title="menu" src="./resources/images/lv_flat_white.png"></button><br>
         <img class="header--logo" src="./resources/images/lavein_flat_white.png">
     </header>
     <main>
@@ -80,12 +86,13 @@
      <footer>
         <div class="footer--content">
             <nav class="social--media-links">
-                <a class="social--widget" href="https://www.facebook.com/laveinire"><img alt="facebook" title="facebook" src="./resources/images/facebook.png"></a>
-                <a class="social--widget" href="https://www.instagram.com/laveinire/"><img alt="instagram" title="instagram" src="./resources/images/instagram.png"></a>
-                <a class="social--widget" href="#"><img alt="bandcamp" title="bandcamp" src="./resources/images/bandcamp-button-circle-whiteblack-512.png"></a>
+                <a class="social--widget" href="https://www.facebook.com/laveinire" target="_blank"><img alt="facebook" title="facebook" src="./resources/images/facebook.png"></a>
+                <a class="social--widget" href="https://www.instagram.com/laveinire/" target="_blank"><img alt="instagram" title="instagram" src="./resources/images/instagram.png"></a>
+                <a class="social--widget" href="#" target="_blank"><img alt="bandcamp" title="bandcamp" src="./resources/images/bandcamp-button-circle-whiteblack-512.png"></a>
             </nav>
             <span class="copyright">&#169 LaVein 2023</span>
         </div>
     </footer>
+    <script src='./main.js'></script>
 </body>
 </html>
