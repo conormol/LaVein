@@ -64,10 +64,10 @@ button {
 
 main {
     z-index: 1;
-    height: 150rem;
     background-color: black;
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .menu {
@@ -77,6 +77,7 @@ main {
     background-color: black;
     top: 0;
     padding: 0.5rem 1rem 0;
+    
 }
 
 .menu--item {
@@ -175,12 +176,16 @@ section {
 
 footer {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
+    margin: 0;
+    height: 50px;
 }
 
 .copyright {
-    display: inline-block;
+    display: inline;
+    bottom: 0;
+    opacity: 0.6;
 }
 
 .social--media-links {
@@ -189,6 +194,11 @@ footer {
 
 .footer--content {
     padding: 1rem;
+}
+
+.social--widget img {
+    height: 2rem;
+    margin: 0 1rem;
 }
 
 button:hover,
