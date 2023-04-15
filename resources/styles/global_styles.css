@@ -193,11 +193,15 @@ section {
 }
 
 .show--container {
-    padding: 1rem 3rem;
+    padding: 0 3rem;
     display: flex;
     font-size: 2rem;
     justify-content: space-between;
     flex-direction: row wrap;
+}
+
+.show--seperator {
+    opacity: 0.5;
 }
 
 .location {
