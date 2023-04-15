@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/Bebas-Regular.ttf")format('truetype');
+}
+
 * {
     background-color: black;
     padding: 0;
     margin: 0;
+    font-family: 'bebas';
+    letter-spacing: 0.03rem;;
     font-size: 16px;
     color: rgb(217, 215, 215);
 }
@@ -17,7 +24,7 @@ h2 {
 #merch--section,
 #shows--section,
 #music--section {
-    padding: 1rem 10rem;
+    padding: 1rem 1rem;
 }
 
 #menu--window {
@@ -49,7 +56,8 @@ h2 {
     flex-direction: column;
     width: 100%;
     height: 20rem;
-    margin: 5rem;
+    margin: 5rem 0;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
 }
@@ -102,17 +110,16 @@ main {
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;;
     position: sticky;
     background-color: black;
     top: 0;
-    padding: 0.5rem 1rem 0;
+    padding: 0.5rem 10rem 0;
     
 }
 
 .menu--item {
     color: white;
-    margin: 0 4rem ;
     font-size: 1.5rem;
 }
 
@@ -123,16 +130,23 @@ section {
 .section--title {
     text-align: center;
     padding: 1rem;
+    text-decoration: underline;
+}
+
+.latest--release {
+    text-align: center;
 }
 
 .artwork {
     height: 30rem;
+    margin: 0 2rem;
 }
 
 .release--links {
     display: flex;
-    justify-content: space-between;
-    margin: 3rem 20rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
 }
 
 .release--links nav {
@@ -150,7 +164,7 @@ section {
 
 .merch--menu {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
 }
 
@@ -174,17 +188,20 @@ section {
 
 
 .show--menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 .show--container {
-    padding: 1rem;
-    width: 45rem;
+    padding: 1rem 3rem;
     display: flex;
     font-size: 2rem;
     justify-content: space-between;
+    flex-direction: row wrap;
+}
+
+.location {
+    margin: 0 1rem;
 }
 
 .date,
@@ -195,8 +212,10 @@ section {
 
 .tickets {
     padding: 0.2rem 0.5rem;
+    max-height: 3.5rem;
     background-color: #333;
     border-radius: 15%;
+    text-decoration: none;
 }
 
 .contact--container {
@@ -236,3 +255,32 @@ a:hover {
     cursor: pointer;
     opacity: .6;
 }
+
+@media only screen and (max-width: 1125px) {
+    * {
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    * {
+      font-size: 10px;
+    }
+
+    .artwork {
+        height: 25rem;
+        margin: 0 2rem;
+    }
+
+    .merch--image {
+        height: 18rem;
+    }
+
+    .merch--image-description {
+        height: 21rem;
+    }
+
+    .menu {
+        padding: 0.5rem 5rem 0;
+    }
+  }
