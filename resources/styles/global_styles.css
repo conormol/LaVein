@@ -219,6 +219,12 @@ section {
     opacity: 0.5;
 }
 
+.show--placeholder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .location {
     margin: 0 1rem;
 }
